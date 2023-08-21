@@ -10,7 +10,7 @@ sequences per species. For species above this threshold,
 data sets in fasta format will be placed in new folder.
 
 usage:
-    python get_seqs_genbank.py speciesList.txt
+    python get_seqs_genbank.py speciesList your.email@email.com
 """
 
 import os
@@ -70,15 +70,15 @@ def write_to_file(species, Ntotal, Nsampled, file):
         out.write("{0}\t{1}\t{2}\n".format(species, Ntotal, Nsampled))
 
 def main():
-    if len(sys.argv) != 2:
-        print("python get_seqs_genbank.py speciesList")
+    if len(sys.argv) != 3:
+        print("python get_seqs_genbank.py speciesList your.email@email.com")
         sys.exit()
 
     # get species list for NCBI search
     spList = get_species_list(sys.argv[1])
 
     # provide your email for NCBI
-    Entrez.email = "YourEmail@example.com"
+    Entrez.email = sys.argv[2]
 
     # make folder for resulting fasta files
     if os.path.exists("./fasta"):
