@@ -11,10 +11,10 @@ usage:
 ***
 The species list file has each species on its own line:
 
-Anopheles melas
-Bactrocera depressa
-Drosophila pseudoobscura
-Ovis canadensis
-Sceloporus undulatus
+Anopheles melas  
+Bactrocera depressa  
+Drosophila pseudoobscura  
+Ovis canadensis  
+Sceloporus undulatus  
 ...
 ***
