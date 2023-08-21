@@ -1,6 +1,6 @@
-# Query GenBank
+# Get GenBank Sequences
 
-This script will retrieve mitochondrial sequence data from GenBank based on a user-provided species list. Data are from the mitochondrial genome with genes that contain cytochrome in gene name. Because cytochrome oxidase-subunit I is the primary barcoding gene, this script targets that gene. Maximum threshold of 50 sequences per species. For species above this threshold, 50 sequences will be selected at random. Species-specific data sets in fasta format will be placed in new folder.
+This script will retrieve mitochondrial sequence data from GenBank based on a user-provided species list. Data are from the mitochondrial genome with genes that contain cytochrome in gene name. Script targets cytochrome oxidase-subunit I (in addition to other genes) because this is the primary barcoding gene. Maximum threshold of 50 sequences per species. For species above this threshold, 50 sequences will be selected at random. Species-specific data sets in fasta format will be placed in new folder.
 
 
 usage:  
