@@ -77,8 +77,8 @@ def main():
     # get species list for NCBI search
     spList = get_species_list(sys.argv[1])
 
-    # provide email for NCBI
-    Entrez.email = "satler.1@osu.edu"
+    # provide your email for NCBI
+    Entrez.email = "YourEmail@example.com"
 
     # make folder for resulting fasta files
     if os.path.exists("./fasta"):
